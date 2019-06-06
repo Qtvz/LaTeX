@@ -1,0 +1,58 @@
+\documentclass{ctexart}
+\usepackage{ctex}
+%纸张设计
+\usepackage[a4paper,left=25mm,right=25mm,bottom=25mm,top=30mm]{geometry}
+%行距设计
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.25}
+\usepackage{array}%图表行距
+%代码边框
+\usepackage{listings}
+\usepackage{xcolor}%定义了一些颜色
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  %小二号
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}       %四号
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  %小四号 
+%图片包
+\usepackage{graphicx}
+\usepackage{subfigure}
+%角度符号
+\usepackage{siunitx}
+
+%控制图片、表格caption
+\usepackage{caption}
+\captionsetup[table]{
+	%labelsep=newline,%换行
+	%singlelinecheck=false,%居左
+	font=large,
+	labelfont=bf,
+	textfont=bf,
+	labelsep=quad%去除冒号
+}
+
+\captionsetup[figure]{
+	font=large,
+	labelfont=bf,
+	textfont=bf,
+	labelsep=quad
+}
+
+%标题设计
+\usepackage{titlesec}
+\titleformat*{\section}{\centering\xiaoerhao\bfseries}
+\titleformat*{\subsection}{\sihao\bfseries}
+%页码
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\rhead{}
+\chead{Qtvz's bachelorthesis}
+\begin{document}
+\xiaosihao
+\setcounter{page}{1}%页码重置
+\pagenumbering{roman}
+\section*{附录}
+\subsection*{附录表格}
+\setcounter{table}{0}
+\subsection*{附录代码}
+\subsection*{附录图片}
+\end{document}
